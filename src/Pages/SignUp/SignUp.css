@@ -1,0 +1,13 @@
+#box {
+     --mask:
+       radial-gradient(105.10px at 50% calc(100% - 141.00px),#000 99%,#0000 101%) calc(50% - 94px) 0/188px 100%,
+       radial-gradient(105.10px at 50% calc(100% + 94.00px),#0000 99%,#000 101%) 50% calc(100% - 47px)/188px 100% repeat-x;
+     -webkit-mask: var(--mask);
+             mask: var(--mask);
+             background: linear-gradient(0deg, #4e7bee 0%, #ffffff 100%);
+   }
+
+   .drop-s {
+    --tw-drop-shadow: drop-shadow(0 45px 10px rgba(0, 0, 0, 0.15));
+    filter:  var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
