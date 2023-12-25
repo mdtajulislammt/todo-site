@@ -28,9 +28,21 @@ const CreateTask = ({tasks,setTasks}) => {
                textDescription : data.textDescription,
                priority : data.priority,
                date: startDate,
-               email:user.email
+               email:user.email,
+               status:"todo"
           }
           console.log(userInfo);
+
+          if(data.taskTitle.length < 3) {
+               Swal.fire({
+                    position: "top-end",
+                    icon: "error",
+                    title: " You  Have must be 3 letters in title ! ", 
+                    showConfirmButton: false,
+                    timer: 1500
+                  })
+               return
+          }
 
           axiosPublic.post('/createTodo', userInfo)
               .then(res =>{
