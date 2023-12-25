@@ -46,7 +46,7 @@ const LogIn = () => {
   }
      return (
           
-               <section className=" pt-10 bg-gradient-to-t from-[#4e7bee]" id="box">
+               <section className=" py-10 bg-gradient-to-t from-[#4e7bee]" id="box">
   <div className="container h-full px-6 py-10 ">
     <div
       className="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">

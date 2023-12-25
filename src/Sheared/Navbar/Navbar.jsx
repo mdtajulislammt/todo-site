@@ -2,8 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import { CiUser } from 'react-icons/ci';
 import {AiOutlineLogout} from 'react-icons/ai';
-import { MdOutlineDashboardCustomize,MdNotificationsActive } from 'react-icons/md';
-import { CgProfile } from 'react-icons/cg';
+import { MdOutlineDashboardCustomize } from 'react-icons/md';
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
@@ -50,13 +49,13 @@ const Navbar = () => {
     >
       <div className=" flex items-center justify-between">
         <div>
-          <h2
+          <Link to={'/'}
             className={`lg:text-4xl md:text-3xl text-2xl uppercase ${
               sticky ? "text-[#1f2937]" : "text-[#5c85ef]"
             }  font-bold`}
           >
             Our-Task
-          </h2>
+          </Link>
         </div>
         <div className="  p-2 px-8  rounded-bl-full lg:rounded-br-full  text-gray-900 md:block hidden font-medium ">
           <ul className=" flex uppercase items-center gap-1 py-2 text-lg">
