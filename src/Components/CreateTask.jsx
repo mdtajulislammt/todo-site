@@ -37,7 +37,7 @@ const CreateTask = ({tasks,setTasks}) => {
                Swal.fire({
                     position: "top-end",
                     icon: "error",
-                    title: " You  Have must be 3 letters in title ! ", 
+                    title: " You  Have must be 3 letters in title", 
                     showConfirmButton: false,
                     timer: 1500
                   })
