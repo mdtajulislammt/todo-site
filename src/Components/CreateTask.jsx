@@ -71,7 +71,7 @@ const CreateTask = ({tasks,setTasks}) => {
     {...register("taskTitle")}
      type="text" placeholder=" Task Title" className=" py-2 w-full border-b   rounded border-black font-semibold pl-2" />
     <div>
-     <h3 className=" text-start mt-5 font-semibold">Task Description</h3>
+     <h3 className=" text-start mt-5 font-semibold">Task Descriptions</h3>
      <input
      {...register("textDescription")}
      className=" border rounded-md w-full font-semibold border-black p-2 mt-2" placeholder=" Task Description " />
